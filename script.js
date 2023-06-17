@@ -117,3 +117,13 @@ if (money) {
 } else {
     console.log("get a job");
 }
+
+// boolean values
+
+let isTired = true, hasLicense = true, hasGoodVision = true;
+if (!isTired && hasLicense && hasGoodVision) {
+    console.log("can drive");
+} else {
+    console.log("should not drive");
+}
+
