@@ -1,0 +1,38 @@
+// for loop
+
+for (let i = 0; i < 10; i++) {
+  console.log(`day ${i}`);
+}
+
+const merry = ["John paul", "author", 1991, ["Micheal", "Peter", "Steven"]];
+
+const Peter = [];
+
+for (let i = 0; i < merry.length; i++) {
+  console.log(merry[i]);
+
+  // Peter[i] = typeof merry[i];
+  Peter.push(typeof merry[i]);
+}
+console.log(Peter);
+
+// print only  object type
+for (let i = 0; i < merry.length; i++) {
+  if (typeof merry[i] !== "object") {
+    continue;
+  }
+  console.log(merry[i]);
+}
+// break if it's number type
+for (let i = 0; i < merry.length; i++) {
+  if (typeof merry[i] == "number") {
+    break;
+  }
+  console.log(merry[i]);
+}
+
+let j = 0;
+while (j < 6) {
+  console.log(`while loop ${j}`);
+  j++;
+}
