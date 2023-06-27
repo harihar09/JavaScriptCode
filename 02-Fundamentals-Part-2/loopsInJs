@@ -36,3 +36,4 @@ while (j < 6) {
   console.log(`while loop ${j}`);
   j++;
 }
+console.log("hi");
