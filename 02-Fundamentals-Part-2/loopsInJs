@@ -37,3 +37,30 @@ while (j < 6) {
   j++;
 }
 console.log("hi");
+
+//  calculate the temperature amplitude
+
+const temperature1 = [3, 4, 5, 1, 6, 7, "10"];
+const temperature2 = [3, 4, 5, 1, 20, 7, "10"];
+
+const getTempAmplitude = function (temp1, temp2) {
+  let temp = temp1.concat(temp2);
+  let max = temp[0];
+  let min = temp[0];
+  console.log(temp);
+  for (let i = 0; i < temp.length; i++) {
+    let currTemp = temp[i];
+    if (typeof currTemp !== "number") continue;
+    if (currTemp > max) {
+      max = currTemp;
+    }
+    if (currTemp < min) {
+      min = currTemp;
+    }
+  }
+  console.log(`min and max = ${min} ${max}`);
+  return max - min;
+};
+console.log(
+  `temp amplitude is = ${getTempAmplitude(temperature1, temperature2)}`
+);
